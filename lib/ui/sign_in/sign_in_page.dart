@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:movie_booking_app/ui/home/main_page.dart';
+import 'package:movie_booking_app/ui/main/main_page.dart';
 
 class SignInPage extends StatefulWidget {
   const SignInPage({super.key});
@@ -64,7 +64,7 @@ class _SignInPageState extends State<SignInPage> {
               const SizedBox(height: 30),
               ElevatedButton(
                 onPressed: () {
-                  HomePage.navigate(context);
+                  MainPage.navigate(context);
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.amber,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:movie_booking_app/ui/main/main_page.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 
 class ConfirmOtpPage extends StatefulWidget {
@@ -82,7 +83,9 @@ class _ConfirmOtpPageState extends State<ConfirmOtpPage> {
               ),
               const Spacer(),
               ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  MainPage.navigate(context);
+                },
                 style: ButtonStyle(
                   backgroundColor: WidgetStateProperty.all(Colors.amber),
                   fixedSize: WidgetStateProperty.all(const Size(double.maxFinite, 50)),
